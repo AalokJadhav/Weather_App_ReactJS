@@ -4,7 +4,7 @@ import './css/style.css';
 const WeatherApp = () => {
 
     const [city, setCity] = useState(null);
-    const [search, setSearch] = useState();
+    const [search, setSearch] = useState('Pune');
 
     useEffect(() => {
         const fetchApi = async () => {
@@ -25,7 +25,6 @@ const WeatherApp = () => {
             <div className="box">
                 <div className="inputData">
                     <input
-                        placeholder='Enter Your City..'
                         type="search"
                         value={search}
                         className="inputField"
